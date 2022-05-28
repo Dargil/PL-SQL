@@ -1,0 +1,18 @@
+DECLARE
+  x NUMBER := 0;
+BEGIN
+  LOOP -- CON CONTINUE SALTAMOS AQUI
+    DBMS_OUTPUT.PUT_LINE ('LOOP:  x = ' || TO_CHAR(x));
+    x := x + 1;
+    /*IF x < 3 THEN
+      CONTINUE;
+    END IF;*/
+    CONTINUE WHEN X <3;
+    DBMS_OUTPUT.PUT_LINE
+      ('DESPUES DE  CONTINUE:  x = ' || TO_CHAR(x));
+    EXIT WHEN x = 5;
+  END LOOP;
+ 
+  DBMS_OUTPUT.PUT_LINE (' DESPUES DEL  LOOP:  x = ' || TO_CHAR(x));
+END;
+/
