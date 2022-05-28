@@ -1,0 +1,36 @@
+Práctica adicional con Variables, constantes y %TYPE
+PRÁCTICA
+Realizar el siguiente ejercicio. La solución está debajo
+
+QUEREMOS CALCULAR EL IMPUESTO DE UN PRODUCTO
+EL IMPUESTO DEL 21% LO PONEMOS EN UNA CONSTANTE
+cREAMOS UNA VARIABLE DE TIPO NUMBER (5,2) PARA PONER EL PRECIO DEL PRODUCTO
+CREAMOS OTRA VARIABLE PARA EL RESULTADO. LE DECIMOS QUE ES DEL MISMO TIPO (TYPE)
+QUE LA ANTERIOR
+HACEMOS EL CÁLCULO Y VISUALIZAMOS EL RESULTADO.
+*/
+
+
+
+SOLUCIÓN
+
+DECLARE
+
+    impuesto    CONSTANT NUMBER := 21;
+
+    precio      NUMBER(5, 2);
+
+    resultado   precio%TYPE;
+
+BEGIN
+
+    precio := 100.50;
+
+    resultado := precio * impuesto / 100;
+
+    dbms_output.put_line(resultado);
+
+END;
+
+/
+
