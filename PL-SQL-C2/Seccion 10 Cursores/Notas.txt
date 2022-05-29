@@ -1,0 +1,17 @@
+-- IMPLICITOS
+-- EXPLICITOS
+
+-- IMPLICITOS
+SQL%ISOPEN -- FALSE para implicitos
+SQL%FOUND
+SQL%NOTFOUND
+SQL%ROWCOUNT
+
+SELECT 1
+
+SELECT 2
+
+SQL%FOUND -- solo se atribuye al select 2
+
+
+
