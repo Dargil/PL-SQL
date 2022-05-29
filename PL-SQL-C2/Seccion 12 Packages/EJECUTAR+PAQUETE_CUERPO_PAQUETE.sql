@@ -1,0 +1,6 @@
+SET SERVEROUTPUT ON
+BEGIN
+ PACK1.CONVERT('aaaa','U');
+ 
+END;
+
